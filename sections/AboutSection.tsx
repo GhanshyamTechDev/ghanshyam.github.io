@@ -9,7 +9,7 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import satNaing from "../public/satnaing.webp";
+import satNaing from "../public/IMG20220321164239-croped.webp";
 import AboutBgSvg from "@/components/AboutBgSvg";
 import EduGroup from "@/components/EduGroup";
 
@@ -139,7 +139,7 @@ const AboutSection: React.FC = () => {
                     width={1700}
                     height={1790}
                     priority
-                    alt="Sat Naing profile picture"
+                    alt="Ghanshyam profile picture"
                     className="rounded-md"
                   />
                 </div>
@@ -169,7 +169,7 @@ const AboutSection: React.FC = () => {
             </div>
 
             <p className="col-start-1 col-end-3 row-start-4 row-end-6 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-6 lg:ml-8 lg:mt-auto about-intro">
-              With 3 years of comprehensive experience in web application
+              With 4+ years of comprehensive experience in web application
               development, I have honed my skills in both frontend and backend
               development. In addition to my hands-on experience in web
               development, my education has also played a critical role in
@@ -197,28 +197,21 @@ const AboutSection: React.FC = () => {
 const educationInfo = [
   {
     id: 1,
-    title: "B.Sc (Hons) in Computing",
-    subTitle: "Edinburgh Napier University | 2018 ~ 2019",
+    title: "Masters of Computer Application",
+    subTitle: "Loyola Academy | 2016 ~ 2019",
     list: [
       "Studied computer science, software development, DevOps",
-      "Graduated with First Class Honours",
-      "Got merit in 7 modules out of 9",
+      "Post Graduated with First Class",
+      "Got 8.7 CGPA",
     ],
   },
   {
     id: 2,
-    title: "HND in Computing & System Development",
-    subTitle: "Info Myanmar University | 2016 - 2018",
+    title: "Bachelors Of Commerce (Comp)",
+    subTitle: "St Mary's Centenary Degree CollegeTerminal Portfolio | 2013 - 2016",
     list: [
-      "Studied modules specializing in software development",
-      "Passed HND with overall Merit",
+      "Studied Accountancy, Business Organization and Business Economics",
     ],
-  },
-  {
-    id: 3,
-    title: "IELTS",
-    subTitle: "British Council Myanmar | 2017",
-    list: ["Got overall band score 6.5."],
   },
 ];
 

@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 module.exports = {
+
+  
   async redirects() {
     return [
       {
@@ -21,6 +23,10 @@ module.exports = {
   compiler: {
     removeConsole: true,
   },
+ 
+    distDir: 'build',
+    
+    
 };
 
 // const nextConfig = {

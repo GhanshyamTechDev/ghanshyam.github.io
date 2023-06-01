@@ -11,8 +11,8 @@ const Home: NextPage = () => {
   return (
     <>
       <AppHead
-        title="Sat Naing - A Full-stack Developer"
-        url={`${process.env.NEXT_PUBLIC_URL}`}
+        title="Ghanshyam - A Full-stack Developer"
+        url={`https://ghanshyamweb.in`}
         meta={meta}
       />
       <div className="bg-bglight dark:bg-bgdark overflow-hidden">

@@ -8,10 +8,10 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import terminalPortfolio from "public/projects/terminal-portfolio.webp";
-import haruFashion from "public/projects/haru-fashion.webp";
-import haruApi from "public/projects/haru-api.webp";
-import astroPaper from "public/projects/astro-paper.webp";
+import terminalPortfolio from "public/sendit.webp";
+import haruFashion from "public/botwana.webp";
+import haruApi from "public/instant.webp";
+import astroPaper from "public/aht.webp";
 
 const ProjectSection: React.FC = () => {
   const { theme } = useTheme();
@@ -42,22 +42,13 @@ const ProjectSection: React.FC = () => {
         </RoughNotation>
       </div>
       <span className="project-desc text-center block mb-4" ref={elementRef}>
-        “Talk is cheap. Show me the code”? I got you. <br />
-        Here are some of my projects you shouldn't misss
+        “Talk is cheap. Show me the projects? I got you. <br />
+        Here are some of my projects where i have worked and you shouldn't miss
       </span>
       <div className="flex flex-wrap">
         {projects.map((project, index) => (
           <ProjectCard key={project.title} index={index} project={project} />
         ))}
-      </div>
-      <div className="others text-center mb-16">
-        Other projects can be explored in{" "}
-        <a
-          href="https://github.com/satnaing"
-          className="font-medium underline link-outline text-marrsgreen dark:text-carrigreen whitespace-nowrap"
-        >
-          my github profile
-        </a>
       </div>
     </section>
   );
@@ -65,75 +56,71 @@ const ProjectSection: React.FC = () => {
 
 const projects = [
   {
-    title: "Terminal Portfolio",
+    title: "Sendit Certified",
     type: "Frontend",
     image: (
       <Image
         src={terminalPortfolio}
         sizes="100vw"
         fill
-        alt="Terminal Portfolio"
+        alt="Sendit Certified"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "My portfolio website in terminal version developed with React and TypeScript. In this project, styled-components library is used for styling and multiple themes supported.",
-    tags: ["React", "TypeScript", "Styled-Components"],
-    liveUrl: "https://terminal.satnaing.dev/",
-    codeUrl: "https://github.com/satnaing/terminal-portfolio",
+    desc: "Sendit Certified is a Secure way of communication between individuals or businesses. It helps any individual or enterprise to communicate between them in a secure way which is different from any other email communication.",
+    tags: ["React", "Redux-middleware", "Redux-forms", "Node JS"],
+    liveUrl: "https://www.senditcertified.com/",
     bgColor: "bg-[#B4BEE0]",
   },
   {
-    title: "Haru Fashion",
+    title: "Botswana Life",
     type: "Frontend",
     image: (
       <Image
         src={haruFashion}
         sizes="100vw"
         fill
-        alt="Haru Fashion App"
+        alt="Botswana Life"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "An ecommerce web application where users can browse various products, add to wishlist, add to cart, and make purchase. Available in English and Burmese languages.",
-    tags: ["NextJS", "TypeScript", "TailwindCSS", "ContextAPI"],
-    liveUrl: "https://haru-fashion.vercel.app/",
-    codeUrl: "https://github.com/satnaing/haru-fashion",
+    desc: "Botswana Life Insurance is the leading insurance company in Botswana with current market share of 80%. It is a 100% subsidiary of Botswana Insurance Holdings, which is listed in the Botswana Stock Exchange. Botswana life provides insurance products for individual as well as corporate clients.",
+    tags: ["React", "Redux-middleware", "MUI",],
+    liveUrl: "https://www.botswanalife.co.bw/",
     bgColor: "bg-[#A6CECE]",
   },
   {
-    title: "Haru API",
-    type: "Backend",
+    title: "Instant Anlytics",
+    type: "Frontend",
     image: (
       <Image
         src={haruApi}
         sizes="100vw"
         fill
-        alt="Haru API"
+        alt="Instant Anlytics"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "A RESTful API developed for Haru fashion ecommerce project. Include CRUD operations, authentication, authorization, forgot/reset password and full-text search.",
-    tags: ["ExpressJS", "TypeScript", "PostgreSQL", "Prisma"],
-    liveUrl: "https://satnaing.github.io/haru-api/",
-    codeUrl: "https://github.com/satnaing/haru-api",
+    desc: "InstantAnalytics comes with an ever-growing list of pre-built connections and dashboards to allow organizations to instantly enable users with interactive insights. In three simple steps, enable an unlimited amount of users on your own Tableau Server.",
+    tags: ["React","Node JS", "Redux-middleware", "MUI",],
+    liveUrl: "https://www.instantanalytics.io/",
     bgColor: "bg-[#C5E4E7]",
   },
   {
-    title: "AstroPaper",
+    title: "Application Health Tracker",
     type: "Frontend",
     image: (
       <Image
         src={astroPaper}
         sizes="100vw"
         fill
-        alt="AstroPaper"
+        alt="Application Health Tracker"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
-    desc: "A minimal, responsive and SEO-friendly blog theme for Astro. This theme is developed with Astro, TypeScript and React. This theme includes fuzzy-search, pagination etc.",
-    tags: ["Astro", "TypeScript", "React", "TailwindCSS"],
-    liveUrl: "https://astro-paper.pages.dev/",
-    codeUrl: "https://github.com/satnaing/astro-paper",
+    desc: "Application Health Tracker (AHT) is a unique product for managing and tracking the asset health of all application in the landscape. It is simple, intuitive and training less product which offers a robust application to track application stacks (e.g. software, database, operating system etc) throughout their life cycle.",
+    tags: ["React", "Redux-middleware", "MUI",],
+    liveUrl: "https://www.cashapona.com/application-health-tracker/",
     bgColor: "bg-[#9FD0E3]",
   },
 ];
