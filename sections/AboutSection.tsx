@@ -119,8 +119,8 @@ const AboutSection: React.FC = () => {
               <h2 className="section-heading">Who am I?</h2>
             </RoughNotation>
           </div>
-          <div className="md:grid grid-rows-5 lg:grid-rows-6 grid-cols-5">
-            <div className="col-start-1 col-end-3 row-start-1 row-end-4 lg:row-end-7 lg:col-start-1 lg:col-end-3 flex justify-center items-center py-4 lg:mb-[20%]">
+          <div className="md:grid grid-rows-4 lg:grid-rows-2 grid-cols-5">
+            <div className="col-start-1 col-end-3 row-start-1 row-end-4 lg:row-end-3 lg:col-start-1 lg:col-end-3 flex justify-center items-center py-4 lg:mb-[20%]">
               <div className="relative w-72">
                 <svg
                   width="96"
@@ -169,11 +169,19 @@ const AboutSection: React.FC = () => {
             </div>
 
             <p className="col-start-1 col-end-3 row-start-4 row-end-6 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-6 lg:ml-8 lg:mt-auto about-intro">
-              With 4+ years of comprehensive experience in web application
-              development, I have honed my skills in both frontend and backend
-              development. In addition to my hands-on experience in web
-              development, my education has also played a critical role in
-              providing a strong foundation for my career.
+              4+ years of experience as a software developer, I have a strong
+              background in various technologies. I have spent significant time
+              working with React, Redux-Middleware, Redux-Forms, Node.js, and
+              Material-UI (MUI). Through my extensive experience, I have
+              mastered the art of building interactive user interfaces using
+              React and effectively managing application state with Redux and
+              middleware. I have successfully developed complex forms utilizing
+              Redux-Forms, and I am adept at using Node.js to create server-side
+              application and APIs. Furthermore, I have utilized
+              Material-UI (MUI) to enhance the visual appeal and user experience
+              of my projects. With my broad skill set and years of experience, I
+              am well-equipped to deliver efficient and user-friendly frontend
+              solutions.
             </p>
 
             <div
