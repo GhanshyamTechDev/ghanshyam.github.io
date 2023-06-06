@@ -7,7 +7,6 @@ import LinkButton from "../components/LinkButton";
 
 import satNaing from "../public/satnaing-illustration.webp";
 import laptop from "../public/laptop-illustration.webp";
-
 const HeroSection: React.FC = () => {
   const sectionRef = useRef(null);
   const q = gsap.utils.selector(sectionRef);
@@ -147,6 +146,16 @@ const HeroSection: React.FC = () => {
         <LinkButton href={`mailto: ghanshyamdadangeweb@gmail.com`}>
           Contact me!
         </LinkButton>
+        <a
+      role="button"
+      className={`bg-marrsgreen hover:bg-marrslight active:bg-marrsdark dark:hover:bg-carrilight dark:active:bg-carridark dark:bg-carrigreen text-bglight dark:text-bgdark
+       py-2 px-3 rounded lg:text-xl ml-2 outline-marrsgreen dark:outline-carrigreen focus-visible:outline-double outline-offset-2`}
+       href={`https://drive.google.com/uc?export=download&id=1jqtXUH97sbFNNQhTGiu0jarvaGIfoVTk`}
+       target="_self"
+       rel="noreferrer"
+    >
+          Download CV
+      </a>
       </div>
       <a
         href="#whoami"
